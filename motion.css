@@ -1,0 +1,49 @@
+/* The content desk comes to life; the artwork itself stays unchanged. */
+.hero-meta{display:flex;align-items:center;gap:20px}
+.hero-meta p{font-size:13px}
+#motion-toggle{background:transparent;border:1px solid var(--line);border-radius:20px;padding:6px 11px;font-size:10px;white-space:nowrap}
+#motion-toggle:hover{border-color:var(--ink)}
+.hero-line{overflow:hidden;padding-bottom:.08em;margin-bottom:-.08em}
+.hero-line-inner{display:block}
+.hero h1.reveal-target{opacity:1;transform:none;transition:none}
+.motion-enabled .hero-line-inner{animation:headline-enter 1.05s cubic-bezier(.16,1,.3,1) .1s backwards}
+.motion-enabled .hero-line:nth-child(2) .hero-line-inner{animation-delay:.28s}
+.motion-enabled .art-back{--rest-angle:-9deg;--entry-angle:-23deg;--entry-x:-70px;--float-y:-15px;animation:artwork-enter 1.1s cubic-bezier(.16,1,.3,1) .3s backwards,artwork-float 5.8s ease-in-out 1.4s infinite}
+.motion-enabled .art-front{--rest-angle:8deg;--entry-angle:24deg;--entry-x:70px;--float-y:-22px;animation:artwork-enter 1.1s cubic-bezier(.16,1,.3,1) .48s backwards,artwork-float 6.4s ease-in-out 1.58s infinite}
+.motion-enabled .desk-art{transition:scale .25s ease}
+.motion-enabled .desk-art:hover{animation-play-state:paused;scale:1.025}
+.motion-enabled .desk:not(.is-in-view) .desk-art{animation-play-state:paused}
+.motion-enabled .project:nth-child(even){transition-delay:90ms}
+.round-link .arrow-icon{transition:transform .3s ease}
+.round-link:hover .arrow-icon{transform:translateY(4px)}
+.open-label{transition:transform .3s ease,background .3s ease}
+.project-cover:hover .open-label{transform:translate(-3px,-3px);background:var(--lilac)}
+.nav-contact .arrow-icon,.line-link .arrow-icon,.contact-bottom .arrow-icon{transition:transform .3s ease}
+.nav-contact:hover .arrow-icon,.line-link:hover .arrow-icon,.contact-bottom a:hover .arrow-icon{transform:translate(3px,-3px)}
+.motion-paused .desk-art{animation-play-state:paused}
+.motion-paused .hero-line-inner{animation:none}
+.motion-paused .reveal-target{opacity:1;transform:none;transition:none}
+@keyframes headline-enter{
+  from{transform:translateY(112%) rotate(2deg);opacity:0}
+  to{transform:translateY(0) rotate(0);opacity:1}
+}
+@keyframes artwork-enter{
+  from{transform:translate(var(--entry-x),75px) rotate(var(--entry-angle)) scale(.88);opacity:0}
+  to{transform:translate(0,0) rotate(var(--rest-angle)) scale(1);opacity:1}
+}
+@keyframes artwork-float{
+  0%,100%{transform:translateY(0) rotate(var(--rest-angle))}
+  50%{transform:translateY(var(--float-y)) rotate(calc(var(--rest-angle) + 2deg))}
+}
+@media(max-width:700px){
+  .hero-meta{align-items:flex-end;flex-direction:column;gap:7px}
+  .hero-meta p{font-size:10px;max-width:115px;text-align:right}
+  #motion-toggle{font-size:9px;padding:4px 9px}
+  .motion-enabled .art-back{--rest-angle:-10deg;--entry-x:-30px;--float-y:-10px}
+  .motion-enabled .art-front{--entry-x:30px;--float-y:-14px}
+  .motion-enabled .project:nth-child(even){transition-delay:0ms}
+}
+@media(prefers-reduced-motion:reduce){
+  #motion-toggle{display:none}
+  .reveal-target{opacity:1;transform:none}
+}

@@ -2,71 +2,420 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Miw · Thitima Phimsen | Content & Visual Storytelling</title>
-  <meta name="description" content="A collection of content, social media, and visual communication work by Thitima (Miw) Phimsen. Featuring Sonar Audiobooks, Merick Polymers, and university projects.">
-  <meta name="theme-color" content="#532d49">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Miw / Thitima Phimsen — Content & visual storytelling</title>
+  <meta name="description" content="Content, graphics, photography and video by Thitima (Miw) Phimsen. Explore work for Sonar Audiobooks, Merick Polymers and Leaf Pac.">
+  <meta name="theme-color" content="#dcd9f2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="motion.css">
   <script src="collections.js" defer></script>
   <script src="script.js" defer></script>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-<header class="site-header"><a class="wordmark" href="#" aria-label="Miw, back to top">miw<span class="flower" aria-hidden="true">✳</span></a><nav aria-label="Main navigation"><a href="#work">Selected work</a><a href="#about">A little about me</a><a href="#contact" class="nav-contact">Say hello <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a></nav></header>
-<main id="main">
-<section class="hero shell" aria-labelledby="hero-title">
-  <div class="hero-copy"><p class="overline">THITIMA PHIMSEN / CONTENT & MARKETING</p><h1 id="hero-title">Making stories<br>feel <em>closer.</em></h1><p class="hero-intro">Hi, I'm Miw. I turn ideas into content people can connect with, through words, visuals, and a little curiosity.</p><a class="text-link" href="#work">Take a look at my work <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16m-6-6 6 6 6-6"/></svg></a><div class="hero-footnote"><span>Social content</span><span>Visual storytelling</span><span>Brand communication</span></div></div>
-  <div class="hero-collage" aria-label="Selected Sonar Audiobooks and Merick Polymers designs"><span class="collage-orbit" aria-hidden="true"></span><div class="paper paper-front"><img src="assets/drive/sonar-10.png" alt="Sonar Audiobooks promotional design with a basket of books"><span>Sonar Audiobooks</span></div><div class="paper paper-back"><img src="assets/drive/merick-32.png" alt="MERIBOOST plastic additive masterbatch product design"><span>Merick Polymers</span></div><span class="collage-note">a few things<br>I've been making</span></div>
-</section>
-<div class="ticker" aria-label="Content creation skills"><span>IDEAS INTO WORDS</span><i aria-hidden="true">✳</i><span>WORDS INTO VISUALS</span><i aria-hidden="true">✳</i><span>VISUALS INTO CONNECTIONS</span><i aria-hidden="true">✳</i></div>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header shell">
+    <a class="logo" href="#" aria-label="Miw, back to top">miw<span aria-hidden="true">.</span></a>
+    <span class="header-note">THITIMA PHIMSEN<br>CONTENT & VISUAL STORYTELLING</span>
+    <nav aria-label="Main navigation"><a href="#work">Work</a><a href="#about">About</a><a class="nav-contact" href="#contact">Let’s talk <span aria-hidden="true"><svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a></nav>
+  </header>
+  <main id="main">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-top"><p class="eyebrow">A PORTFOLIO BY MIW</p><div class="hero-meta"><p>Words, visuals & a curious mind.</p><button id="motion-toggle" hidden>Pause motion</button></div></div>
+      <h1 id="hero-title"><span class="hero-line"><span class="hero-line-inner">GOOD STORIES.</span></span><span class="hero-line"><span class="hero-line-inner">MADE TO <i>CONNECT.</i></span></span></h1>
+      <div class="desk">
+        <div class="desk-intro"><span class="tiny-label">HELLO, I’M MIW.</span><p>I turn ideas into content.<br>From the first bit of research<br>to the last little layout detail.</p><a href="#work" class="round-link" aria-label="Explore selected work"><span aria-hidden="true"><svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4v16m-6-6 6 6 6-6"/></svg></span></a></div>
+        <button class="desk-art art-back" data-gallery="merick" aria-label="Explore Merick product graphics"><img src="assets/drive/merick-32.png" alt="MERIBOOST product communication design"><span>PRODUCT STORIES / MERICK</span></button>
+        <button class="desk-art art-front" data-gallery="sonarcollection" aria-label="Explore Sonar book promotions"><img src="assets/drive/sonar-10.png" alt="Sonar Audiobooks book selection promotional design"><span>STORIES WORTH LISTENING TO / SONAR</span></button>
+        <div class="desk-caption"><span class="caption-arrow" aria-hidden="true"><svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 19 5 5m0 14V5h14"/></svg></span><p>A little of what<br>I’ve been making.</p><span class="tiny-label">CLICK TO TAKE A CLOSER LOOK</span></div>
+      </div>
+      <div class="hero-bottom"><span>CONTENT CREATION</span><span>GRAPHIC DESIGN</span><span>PHOTO & VIDEO</span><a href="#work">SCROLL TO EXPLORE <span aria-hidden="true"><svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4v16m-6-6 6 6 6-6"/></svg></span></a></div>
+    </section>
 
-<section id="work" class="shell work-section"><div class="section-heading"><div><p class="overline">A COLLECTION, NOT JUST A RESUME</p><h2>Selected <em>work.</em></h2></div><p>From book promotions to product stories.<br>Different subjects, the same care for the details.</p></div>
-<div class="filters" role="group" aria-label="Filter projects"><button class="active" data-filter="all" aria-pressed="true">All work <span>15</span></button><button data-filter="sonar" aria-pressed="false">Sonar Audiobooks</button><button data-filter="merick" aria-pressed="false">Merick & Leaf Pac</button></div>
-<div class="work-grid">
-<header class="company-heading" data-company="sonar"><div class="company-heading-title"><h3>Sonar Audiobooks</h3></div><details open><summary>The brief & my role</summary><p>As a Marketing Intern at Sonar AI, I create social graphics and help turn campaign concepts into visual content. My wider role includes coordinating with authors and the internal team on promotional messages and creative requirements. The work shown here demonstrates the finished layouts; it does not claim authorship of the underlying book covers or character illustrations.</p></details></header>
-<article class="project project-wide" data-category="sonar"><div class="everyday-pair"><button class="project-cover cover-blue" data-gallery="everyday" aria-label="Open everyday listening social media designs"><img class="square-art" src="assets/sonar/everyday-listening-2.png" alt="Sonar social media artwork about listening while dressing, commuting, or waiting" loading="lazy"><span class="open-label">View artwork <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></button><button class="project-cover cover-blue" data-gallery="everydaybeforeafter" aria-label="Open before-and-after everyday listening design"><img class="square-art" src="assets/sonar/everyday-listening-1.png" alt="Sonar before-and-after social layout about listening during daily routines" loading="lazy"><span class="open-label">View artwork <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></button></div><div class="project-meta"><span>SONAR AUDIOBOOKS / SOCIAL CONTENT</span><span>2026</span></div><h3>Everyday moments, more stories.</h3><p>Social layouts that connect audiobooks to familiar moments: a commute, getting ready, or waiting for a ride.</p><div class="role-line">My contribution: social media layouts & messaging</div></article>
+    <section id="work" class="work-section shell" aria-labelledby="work-title">
+      <div class="section-heading"><div><p class="eyebrow">FROM MY CONTENT DESK</p><h2 id="work-title">Selected work<span class="accent">.</span></h2></div><p>Different subjects. Different audiences.<br>A clear message at the heart of each.</p></div>
+      <div class="work-toolbar"><div class="filters" role="group" aria-label="Filter selected work"><button data-filter="all" aria-pressed="true">All work</button><button data-filter="sonar" aria-pressed="false">Sonar Audiobooks</button><button data-filter="merick" aria-pressed="false">Merick & Leaf Pac</button></div><span id="result-count" role="status"></span></div>
+      <div id="project-grid" class="project-groups">
+        <section class="company-group" data-company="sonar" aria-labelledby="sonar-title">
+        <header class="company-heading" data-company="sonar">
+          <div class="company-heading-title">
+            <h3 id="sonar-title">Sonar Audiobooks</h3>
+          </div>
+          <details open>
+            <summary>The brief &amp; my role</summary>
+            <p>
+              As a Marketing Intern at Sonar AI, I create social graphics and help turn campaign concepts into visual content. My wider role includes coordinating with authors and the internal team on promotional messages and creative requirements. The work shown here demonstrates the finished layouts; it does not claim authorship of the underlying book covers or character illustrations.
+            </p>
+          </details>
+        </header>
+          <div class="project-grid">
 
+        <article class="project project-wide" data-company="sonar">
+          <div class="everyday-pair">
+            <button class="project-cover cover-blue" data-gallery="everyday" aria-label="Open everyday listening social media designs">
+              <img class="square-art" src="assets/sonar/everyday-listening-2.png" alt="Sonar social media artwork about listening while dressing, commuting, or waiting" loading="lazy">
+              <span class="open-label">
+                View artwork
+                <svg class="arrow-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg>
+              </span>
+            </button>
+            <button class="project-cover cover-blue" data-gallery="everydaybeforeafter" aria-label="Open before-and-after everyday listening design">
+              <img class="square-art" src="assets/sonar/everyday-listening-1.png" alt="Sonar before-and-after social layout about listening during daily routines" loading="lazy">
+              <span class="open-label">
+                View artwork
+                <svg class="arrow-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg>
+              </span>
+            </button>
+          </div>
+          <div class="project-meta">
+            <span>SONAR AUDIOBOOKS / SOCIAL CONTENT</span>
+            <span>2026</span>
+          </div>
+          <h4>Everyday moments, more stories.</h4>
+          <p>Social layouts that connect audiobooks to familiar moments: a commute, getting ready, or waiting for a ride.</p>
+          <div class="role-line">My contribution: social media layouts &amp; messaging</div>
+        </article>
 
-<article class="project project-wide" data-category="sonar"><div class="everyday-pair"><button class="project-cover" data-gallery="sherlock" aria-label="Open Sherlock Holmes audiobook promotion"><img class="square-art" src="assets/sonar/sherlock-light.png" alt="Sherlock Holmes book promotion in a light paper-inspired layout" loading="lazy"><span class="open-label">View artwork <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></button><button class="project-cover" data-gallery="america" aria-label="Open One Year in America audiobook promotion"><img class="square-art" src="assets/sonar/sherlock-dark.png" alt="One Year in America audiobook promotion using the same visual format" loading="lazy"><span class="open-label">View artwork <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></button></div><div class="project-meta"><span>SONAR AUDIOBOOKS / BOOK PROMOTION</span><span>2026</span></div><h3>A book cover. A reason to listen.</h3><p>Promotional visuals that bring audiobook titles into the feed, using book imagery, listening cues, and a clear invitation to try the app.</p><div class="role-line">My contribution: promotional layouts & visual content</div></article>
+        <article class="project project-wide" data-company="sonar">
+          <div class="everyday-pair">
+            <button class="project-cover" data-gallery="sherlock" aria-label="Open Sherlock Holmes audiobook promotion">
+              <img class="square-art" src="assets/sonar/sherlock-light.png" alt="Sherlock Holmes book promotion in a light paper-inspired layout" loading="lazy">
+              <span class="open-label">
+                View artwork
+                <svg class="arrow-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg>
+              </span>
+            </button>
+            <button class="project-cover" data-gallery="america" aria-label="Open One Year in America audiobook promotion">
+              <img class="square-art" src="assets/sonar/sherlock-dark.png" alt="One Year in America audiobook promotion using the same visual format" loading="lazy">
+              <span class="open-label">
+                View artwork
+                <svg class="arrow-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg>
+              </span>
+            </button>
+          </div>
+          <div class="project-meta">
+            <span>SONAR AUDIOBOOKS / BOOK PROMOTION</span>
+            <span>2026</span>
+          </div>
+          <h4>A book cover. A reason to listen.</h4>
+          <p>Promotional visuals that bring audiobook titles into the feed, using book imagery, listening cues, and a clear invitation to try the app.</p>
+          <div class="role-line">My contribution: promotional layouts &amp; visual content</div>
+        </article>
 
+        <article class="project" data-company="sonar">
+          <button class="project-cover cover-rose" data-gallery="poster" aria-label="Open Sonar listening poster">
+            <img class="single-art" src="assets/sonar/listening-poster.png" alt="Sonar Audiobooks promotional poster with listening scenes and an app offer" loading="lazy">
+            <span class="open-label">
+              View artwork
+              <svg class="arrow-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg>
+            </span>
+          </button>
+          <div class="project-meta">
+            <span>SONAR AUDIOBOOKS / POSTER DESIGN</span>
+            <span>2026</span>
+          </div>
+          <h4>Meet your next listening habit.</h4>
+          <p>A poster introducing Sonar Audiobooks, with everyday listening scenes and an app offer in one layout.</p>
+          <div class="role-line">My contribution: poster layout &amp; promotional design</div>
+        </article>
 
+        <article class="project" data-company="sonar">
+          <button class="project-cover cover-peach" data-gallery="landscape" aria-label="Open Sherlock Holmes landscape promotion">
+            <img class="landscape-art" src="assets/sonar/sherlock-landscape.png" alt="Landscape announcement for the Sherlock Holmes audiobook" loading="lazy">
+            <span class="open-label">
+              View artwork
+              <svg class="arrow-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg>
+            </span>
+          </button>
+          <div class="project-meta">
+            <span>SONAR AUDIOBOOKS / LANDSCAPE PROMOTION</span>
+            <span>2026</span>
+          </div>
+          <h4>Sherlock Holmes, ready to play.</h4>
+          <p>A landscape announcement for the audiobook release, built around the book artwork and a clear listening message.</p>
+          <div class="role-line">My contribution: promotional layout &amp; format adaptation</div>
+        </article>
 
-<article class="project" data-category="sonar"><button class="project-cover cover-rose" data-gallery="poster" aria-label="Open Sonar listening poster"><img class="single-art" src="assets/sonar/listening-poster.png" alt="Sonar Audiobooks promotional poster with listening scenes and an app offer" loading="lazy"><span class="open-label">View artwork <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></button><div class="project-meta"><span>SONAR AUDIOBOOKS / POSTER DESIGN</span><span>2026</span></div><h3>Meet your next listening habit.</h3><p>A poster introducing Sonar Audiobooks, with everyday listening scenes and an app offer in one layout.</p><div class="role-line">My contribution: poster layout & promotional design</div></article>
+        <article class="project" data-company="sonar">
+          <button class="project-cover" data-gallery="sonarcollection" aria-label="Open Book promotions">
+            <div class="collection-preview">
+              <img src="assets/drive/sonar-10.png" alt="Book selection promotional layout." loading="lazy" decoding="async">
+              <img src="assets/drive/sonar-11.png" alt="Top-selling audiobook selection layout." loading="lazy" decoding="async">
+            </div>
+            <span class="open-label">
+              View 6 artworks
+              <svg class="arrow-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg>
+            </span>
+          </button>
+          <div class="project-meta">
+            <span>SONAR AUDIOBOOKS / CONTENT &amp; DESIGN</span>
+            <span>2026</span>
+          </div>
+          <h4>Book promotions.</h4>
+          <p>Promotional layouts for individual titles, book selections, and best sellers. Each piece gives the book imagery room while keeping the listening message easy to find.</p>
+          <div class="role-line">My contribution: promotional graphics &amp; layout design</div>
+        </article>
 
-<article class="project" data-category="sonar"><button class="project-cover cover-peach" data-gallery="landscape" aria-label="Open Sherlock Holmes landscape promotion"><img class="landscape-art" src="assets/sonar/sherlock-landscape.png" alt="Landscape announcement for the Sherlock Holmes audiobook" loading="lazy"><span class="open-label">View artwork <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></button><div class="project-meta"><span>SONAR AUDIOBOOKS / LANDSCAPE PROMOTION</span><span>2026</span></div><h3>Sherlock Holmes, ready to play.</h3><p>A landscape announcement for the audiobook release, built around the book artwork and a clear listening message.</p><div class="role-line">My contribution: promotional layout & format adaptation</div></article>
+        <article class="project" data-company="sonar">
+          <button class="project-cover" data-gallery="sonareducation" aria-label="Open Helping people understand audiobooks">
+            <div class="collection-preview">
+              <img src="assets/drive/sonar-18.png" alt="An introduction to what audiobooks are." loading="lazy" decoding="async">
+              <img src="assets/drive/sonar-19.png" alt="Comparing audiobooks and e-books." loading="lazy" decoding="async">
+            </div>
+            <span class="open-label">
+              View 6 artworks
+              <svg class="arrow-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg>
+            </span>
+          </button>
+          <div class="project-meta">
+            <span>SONAR AUDIOBOOKS / CONTENT &amp; DESIGN</span>
+            <span>2026</span>
+          </div>
+          <h4>Helping people understand audiobooks.</h4>
+          <p>Social content explaining what audiobooks are, how they compare with e-books, and where listening can fit into everyday life.</p>
+          <div class="role-line">My contribution: social graphics &amp; visual explanations</div>
+        </article>
 
-<article class="project" data-category="sonar"><button class="project-cover" data-gallery="sonarcollection" aria-label="Open Book promotions"><div class="collection-preview"><img src="assets/drive/sonar-10.png" alt="Book selection promotional layout." loading="lazy" decoding="async"><img src="assets/drive/sonar-11.png" alt="Top-selling audiobook selection layout." loading="lazy" decoding="async"></div><span class="open-label">View 6 artworks <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></button><div class="project-meta"><span>SONAR AUDIOBOOKS / CONTENT & DESIGN</span><span>2026</span></div><h3>Book promotions.</h3><p>Promotional layouts for individual titles, book selections, and best sellers. Each piece gives the book imagery room while keeping the listening message easy to find.</p><div class="role-line">My contribution: promotional graphics & layout design</div></article>
+        <article class="project" data-company="sonar">
+          <button class="project-cover" data-gallery="sonaroffers" aria-label="Open Offers and app information">
+            <div class="collection-preview">
+              <img src="assets/drive/sonar-13.png" alt="Monthly subscription offer with book imagery." loading="lazy" decoding="async">
+              <img src="assets/drive/sonar-14.png" alt="Monthly subscription offer with an app and tablet layout." loading="lazy" decoding="async">
+            </div>
+            <span class="open-label">
+              View 4 artworks
+              <svg class="arrow-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg>
+            </span>
+          </button>
+          <div class="project-meta">
+            <span>SONAR AUDIOBOOKS / CONTENT &amp; DESIGN</span>
+            <span>2026</span>
+          </div>
+          <h4>Offers and app information.</h4>
+          <p>Subscription, free-trial, and app-information designs with clear pricing, book imagery, and next steps.</p>
+          <div class="role-line">My contribution: promotional layouts &amp; app communication</div>
+        </article>
 
-<article class="project" data-category="sonar"><button class="project-cover" data-gallery="sonareducation" aria-label="Open Helping people understand audiobooks"><div class="collection-preview"><img src="assets/drive/sonar-18.png" alt="An introduction to what audiobooks are." loading="lazy" decoding="async"><img src="assets/drive/sonar-19.png" alt="Comparing audiobooks and e-books." loading="lazy" decoding="async"></div><span class="open-label">View 6 artworks <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></button><div class="project-meta"><span>SONAR AUDIOBOOKS / CONTENT & DESIGN</span><span>2026</span></div><h3>Helping people understand audiobooks.</h3><p>Social content explaining what audiobooks are, how they compare with e-books, and where listening can fit into everyday life.</p><div class="role-line">My contribution: social graphics & visual explanations</div></article>
+        <article class="project" data-company="sonar">
+          <button class="project-cover" data-gallery="sonarbanners" aria-label="Open The message, in a wider format">
+            <div class="banner-preview">
+              <img src="assets/drive/sonar-25.png" alt="Free-trial banner with the Sonar mascot." loading="lazy" decoding="async">
+              <img src="assets/drive/sonar-27.png" alt="Monthly subscription banner." loading="lazy" decoding="async">
+            </div>
+            <span class="open-label">
+              View 2 artworks
+              <svg class="arrow-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg>
+            </span>
+          </button>
+          <div class="project-meta">
+            <span>SONAR AUDIOBOOKS / CONTENT &amp; DESIGN</span>
+            <span>2026</span>
+          </div>
+          <h4>The message, in a wider format.</h4>
+          <p>Two banner layouts adapting Sonar's subscription and trial offers to a wider canvas.</p>
+          <div class="role-line">My contribution: banner layout &amp; format adaptation</div>
+        </article>
 
-<article class="project" data-category="sonar"><button class="project-cover" data-gallery="sonaroffers" aria-label="Open Offers and app information"><div class="collection-preview"><img src="assets/drive/sonar-13.png" alt="Monthly subscription offer with book imagery." loading="lazy" decoding="async"><img src="assets/drive/sonar-14.png" alt="Monthly subscription offer with an app and tablet layout." loading="lazy" decoding="async"></div><span class="open-label">View 4 artworks <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></button><div class="project-meta"><span>SONAR AUDIOBOOKS / CONTENT & DESIGN</span><span>2026</span></div><h3>Offers and app information.</h3><p>Subscription, free-trial, and app-information designs with clear pricing, book imagery, and next steps.</p><div class="role-line">My contribution: promotional layouts & app communication</div></article>
+        <article class="project project-wide" data-company="sonar">
+          <button class="project-cover" data-gallery="sonarcarousel" aria-label="Open A book, one swipe at a time">
+            <div class="collection-preview">
+              <img src="assets/drive/sonar-68.png" alt="Book-led content series for 100 นักฟิสิกส์พลิกโลก · Artwork 1." loading="lazy" decoding="async">
+              <img src="assets/drive/sonar-67.png" alt="Book-led content series for 100 นักฟิสิกส์พลิกโลก · Artwork 5." loading="lazy" decoding="async">
+              <img src="assets/drive/sonar-66.png" alt="Book-led content series for 100 นักฟิสิกส์พลิกโลก · Artwork 6." loading="lazy" decoding="async">
+            </div>
+            <span class="open-label">
+              View 7 artworks
+              <svg class="arrow-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg>
+            </span>
+          </button>
+          <div class="project-meta">
+            <span>SONAR AUDIOBOOKS / CONTENT &amp; DESIGN</span>
+            <span>2026</span>
+          </div>
+          <h4>A book, one swipe at a time.</h4>
+          <p>Two visual series for 100 นักฟิสิกส์พลิกโลก, combining short reading prompts with book-focused promotional layouts.</p>
+          <div class="role-line">My contribution: carousel graphics &amp; promotional layouts</div>
+        </article>
 
-<article class="project" data-category="sonar"><button class="project-cover" data-gallery="sonarbanners" aria-label="Open The message, in a wider format"><div class="banner-preview"><img src="assets/drive/sonar-25.png" alt="Free-trial banner with the Sonar mascot." loading="lazy" decoding="async"><img src="assets/drive/sonar-27.png" alt="Monthly subscription banner." loading="lazy" decoding="async"></div><span class="open-label">View 2 artworks <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></button><div class="project-meta"><span>SONAR AUDIOBOOKS / CONTENT & DESIGN</span><span>2026</span></div><h3>The message, in a wider format.</h3><p>Two banner layouts adapting Sonar's subscription and trial offers to a wider canvas.</p><div class="role-line">My contribution: banner layout & format adaptation</div></article>
+        <article class="project project-wide" data-company="sonar">
+          <div class="project-meta">
+            <span>SONAR AUDIOBOOKS / VIDEO CONTENT</span>
+            <span>2026</span>
+          </div>
+          <h4>Inside the recording studio.</h4>
+          <p>A look behind audiobook recording, alongside a short animated book-launch piece. Play each video here.</p>
+          <div class="video-series">
+            <figure>
+              <div class="project-cover">
+                <video controls playsinline preload="none" poster="assets/drive/sonar-34-poster.jpg" aria-label="Sonar Behind the recording session · 2:11">
+                  <source src="assets/drive/sonar-34.mp4" type="video/mp4">
+                  Your browser does not support inline video. <a href="assets/drive/sonar-34.mp4">Open video</a>.
+                </video>
+              </div>
+              <figcaption>Behind the recording session · 2:11</figcaption>
+            </figure>
+            <figure>
+              <div class="project-cover">
+                <video controls playsinline preload="none" poster="assets/drive/sonar-35-poster.jpg" aria-label="Sonar Inside an audiobook session · 0:26">
+                  <source src="assets/drive/sonar-35.mp4" type="video/mp4">
+                  Your browser does not support inline video. <a href="assets/drive/sonar-35.mp4">Open video</a>.
+                </video>
+              </div>
+              <figcaption>Inside an audiobook session · 0:26</figcaption>
+            </figure>
+            <figure>
+              <div class="project-cover">
+                <video controls playsinline preload="none" poster="assets/drive/sonar-36-poster.jpg" aria-label="Sonar Exclusive book launch · 0:05">
+                  <source src="assets/drive/sonar-36.mp4" type="video/mp4">
+                  Your browser does not support inline video. <a href="assets/drive/sonar-36.mp4">Open video</a>.
+                </video>
+              </div>
+              <figcaption>Exclusive book launch · 0:05</figcaption>
+            </figure>
+          </div>
+          <div class="role-line">Selected video work from Sonar Audiobooks</div>
+        </article>
 
-<article class="project project-wide" data-category="sonar"><button class="project-cover" data-gallery="sonarcarousel" aria-label="Open A book, one swipe at a time"><div class="collection-preview"><img src="assets/drive/sonar-68.png" alt="Book-led content series for 100 นักฟิสิกส์พลิกโลก · Artwork 1." loading="lazy" decoding="async"><img src="assets/drive/sonar-67.png" alt="Book-led content series for 100 นักฟิสิกส์พลิกโลก · Artwork 5." loading="lazy" decoding="async"><img src="assets/drive/sonar-66.png" alt="Book-led content series for 100 นักฟิสิกส์พลิกโลก · Artwork 6." loading="lazy" decoding="async"></div><span class="open-label">View 7 artworks <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></button><div class="project-meta"><span>SONAR AUDIOBOOKS / CONTENT & DESIGN</span><span>2026</span></div><h3>A book, one swipe at a time.</h3><p>Two visual series for 100 นักฟิสิกส์พลิกโลก, combining short reading prompts with book-focused promotional layouts.</p><div class="role-line">My contribution: carousel graphics & promotional layouts</div></article>
+          </div>
+        </section>
+        <section class="company-group" data-company="merick" aria-labelledby="merick-title">
+        <header class="company-heading" data-company="merick">
+          <div class="company-heading-title">
+            <h3 id="merick-title">Merick Polymers &amp; Leaf Pac</h3>
+          </div>
+          <details open>
+            <summary>The brief &amp; my role</summary>
+            <p>
+              I supported communication for Merick Polymers and Leaf Pac. My work involved researching industry news, writing articles, designing product and news graphics, preparing PP/PE colour catalogs, and responding to customers through LINE OA and Facebook.
+            </p>
+          </details>
+        </header>
+          <div class="project-grid">
 
-<article class="project project-wide" data-category="sonar"><div class="project-meta"><span>SONAR AUDIOBOOKS / VIDEO CONTENT</span><span>2026</span></div><h3>Inside the recording studio.</h3><p>A look behind audiobook recording, alongside a short animated book-launch piece. Play each video here.</p><div class="video-series"><figure><div class="project-cover"><video controls playsinline preload="none" poster="assets/drive/sonar-34-poster.jpg" aria-label="Sonar Behind the recording session · 2:11"><source src="assets/drive/sonar-34.mp4" type="video/mp4">Your browser does not support inline video. <a href="assets/drive/sonar-34.mp4">Open video</a>.</video></div><figcaption>Behind the recording session · 2:11</figcaption></figure><figure><div class="project-cover"><video controls playsinline preload="none" poster="assets/drive/sonar-35-poster.jpg" aria-label="Sonar Inside an audiobook session · 0:26"><source src="assets/drive/sonar-35.mp4" type="video/mp4">Your browser does not support inline video. <a href="assets/drive/sonar-35.mp4">Open video</a>.</video></div><figcaption>Inside an audiobook session · 0:26</figcaption></figure><figure><div class="project-cover"><video controls playsinline preload="none" poster="assets/drive/sonar-36-poster.jpg" aria-label="Sonar Exclusive book launch · 0:05"><source src="assets/drive/sonar-36.mp4" type="video/mp4">Your browser does not support inline video. <a href="assets/drive/sonar-36.mp4">Open video</a>.</video></div><figcaption>Exclusive book launch · 0:05</figcaption></figure></div><div class="role-line">Selected video work from Sonar Audiobooks</div></article>
+        <article class="project project-wide" data-company="merick">
+          <button class="project-cover cover-sage" data-gallery="merick" aria-label="Open MERIBOOST and MAKSTIFF product graphics">
+            <span class="merick-art-grid">
+              <img src="assets/drive/merick-32.png" alt="MERIBOOST product graphic" loading="lazy">
+              <img src="assets/drive/merick-29.png" alt="MERIBOOST product information design" loading="lazy">
+              <img src="assets/drive/merick-07.png" alt="MAKSTIFF product graphic" loading="lazy">
+              <img src="assets/drive/merick-06.png" alt="MAKSTIFF product information design" loading="lazy">
+            </span>
+            <span class="open-label">
+              View portfolio samples
+              <svg class="arrow-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg>
+            </span>
+          </button>
+          <div class="project-meta">
+            <span>MERICK POLYMERS &amp; LEAF PAC / CONTENT &amp; DESIGN</span>
+            <span>2026</span>
+          </div>
+          <h4>Giving technical products a clearer story.</h4>
+          <p>Industry research, Facebook content, website articles, product photography, and graphics created during a ten-week marketing internship.</p>
+          <div class="role-line">My contribution: research, writing, Canva design &amp; photography</div>
+        </article>
 
-<header class="company-heading" data-company="merick"><div class="company-heading-title"><h3>Merick Polymers &amp; Leaf Pac</h3></div><details open><summary>The brief & my role</summary><p>I supported communication for Merick Polymers and Leaf Pac. My work involved researching industry news, writing articles, designing product and news graphics, preparing PP/PE colour catalogs, and responding to customers through LINE OA and Facebook.</p></details></header>
-<article class="project project-wide" data-category="merick"><button class="project-cover cover-sage" data-gallery="merick" aria-label="Open MERIBOOST and MAKSTIFF product graphics"><span class="merick-art-grid"><img src="assets/drive/merick-32.png" alt="MERIBOOST product graphic" loading="lazy"><img src="assets/drive/merick-29.png" alt="MERIBOOST product information design" loading="lazy"><img src="assets/drive/merick-07.png" alt="MAKSTIFF product graphic" loading="lazy"><img src="assets/drive/merick-06.png" alt="MAKSTIFF product information design" loading="lazy"></span><span class="open-label">View portfolio samples <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></button><div class="project-meta"><span>MERICK POLYMERS & LEAF PAC / CONTENT & DESIGN</span><span>2026</span></div><h3>Giving technical products a clearer story.</h3><p>Industry research, Facebook content, website articles, product photography, and graphics created during a ten-week marketing internship.</p><div class="role-line">My contribution: research, writing, Canva design & photography</div></article>
+        <article class="project project-wide" data-company="merick">
+          <button class="project-cover cover-blue" data-gallery="pageupdates" aria-label="Open Facebook page update examples">
+            <div class="page-update-pair">
+              <img src="assets/merick/page-preorder.webp" alt="Published Merick Facebook post announcing PP 2300K pre-orders" loading="lazy">
+              <img src="assets/merick/page-specimen.webp" alt="Published Merick Facebook post introducing specimen preparation services" loading="lazy">
+            </div>
+            <span class="open-label">
+              View artwork
+              <svg class="arrow-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg>
+            </span>
+          </button>
+          <div class="project-meta">
+            <span>MERICK &amp; LEAF PAC / FACEBOOK PAGE UPDATES</span>
+            <span>2026</span>
+          </div>
+          <h4>Keeping the page informed.</h4>
+          <p>Facebook content covering product availability, services, and industry topics. These published-post examples show how the copy and visuals appeared on the page.</p>
+          <div class="role-line">My contribution: content research, writing &amp; graphic design</div>
+        </article>
 
+        <article class="project" data-company="merick">
+          <button class="project-cover" data-gallery="merickcampaigns" aria-label="Open Industry news, made readable">
+            <div class="collection-preview">
+              <img src="assets/drive/merick-43.png" alt="Industry, packaging, or sustainability news graphic · 38." loading="lazy" decoding="async">
+              <img src="assets/drive/merick-49.png" alt="Industry, packaging, or sustainability news graphic." loading="lazy" decoding="async">
+            </div>
+            <span class="open-label">
+              View 18 artworks
+              <svg class="arrow-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg>
+            </span>
+          </button>
+          <div class="project-meta">
+            <span>MERICK &amp; LEAF PAC / INDUSTRY NEWS</span>
+            <span>2026</span>
+          </div>
+          <h4>Industry news, made readable.</h4>
+          <p>Graphics for Merick and Leaf Pac covering packaging, plastics, sustainability, and industry developments. Each layout pairs a short headline with supporting imagery.</p>
+          <div class="role-line">My contribution: content research, writing &amp; graphic design</div>
+        </article>
 
-<article class="project project-wide" data-category="merick"><button class="project-cover cover-blue" data-gallery="pageupdates" aria-label="Open Facebook page update examples"><div class="page-update-pair"><img src="assets/merick/page-preorder.webp" alt="Published Merick Facebook post announcing PP 2300K pre-orders" loading="lazy"><img src="assets/merick/page-specimen.webp" alt="Published Merick Facebook post introducing specimen preparation services" loading="lazy"></div><span class="open-label">View artwork <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></button><div class="project-meta"><span>MERICK & LEAF PAC / FACEBOOK PAGE UPDATES</span><span>2026</span></div><h3>Keeping the page informed.</h3><p>Facebook content covering product availability, services, and industry topics. These published-post examples show how the copy and visuals appeared on the page.</p><div class="role-line">My contribution: content research, writing & graphic design</div></article>
-<article class="project" data-category="merick"><button class="project-cover" data-gallery="merickcampaigns" aria-label="Open Industry news, made readable"><div class="collection-preview"><img src="assets/drive/merick-43.png" alt="Industry, packaging, or sustainability news graphic · 38." loading="lazy" decoding="async"><img src="assets/drive/merick-49.png" alt="Industry, packaging, or sustainability news graphic." loading="lazy" decoding="async"></div><span class="open-label">View 18 artworks <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></button><div class="project-meta"><span>MERICK & LEAF PAC / INDUSTRY NEWS</span><span>2026</span></div><h3>Industry news, made readable.</h3><p>Graphics for Merick and Leaf Pac covering packaging, plastics, sustainability, and industry developments. Each layout pairs a short headline with supporting imagery.</p><div class="role-line">My contribution: content research, writing & graphic design</div></article>
+        <article class="project" data-company="merick">
+          <button class="project-cover" data-gallery="pigments" aria-label="Open Working with colour">
+            <div class="collection-preview">
+              <img src="assets/drive/merick-08.png" alt="MERCHROMIX colour masterbatch promotional design." loading="lazy" decoding="async">
+              <img src="assets/drive/merick-59.png" alt="Pigment and colour-sample photography · 1." loading="lazy" decoding="async">
+            </div>
+            <span class="open-label">
+              View 12 artworks
+              <svg class="arrow-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg>
+            </span>
+          </button>
+          <div class="project-meta">
+            <span>MERICK &amp; LEAF PAC / COLOUR PRODUCTS</span>
+            <span>2026</span>
+          </div>
+          <h4>Working with colour.</h4>
+          <p>Colour-sample photography and product layouts for pigments and masterbatches, with a supporting product-copy reference.</p>
+          <div class="role-line">My contribution: product photography &amp; graphic layouts</div>
+        </article>
 
-<article class="project" data-category="merick"><button class="project-cover" data-gallery="pigments" aria-label="Open Working with colour"><div class="collection-preview"><img src="assets/drive/merick-08.png" alt="MERCHROMIX colour masterbatch promotional design." loading="lazy" decoding="async"><img src="assets/drive/merick-59.png" alt="Pigment and colour-sample photography · 1." loading="lazy" decoding="async"></div><span class="open-label">View 12 artworks <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></button><div class="project-meta"><span>MERICK & LEAF PAC / COLOUR PRODUCTS</span><span>2026</span></div><h3>Working with colour.</h3><p>Colour-sample photography and product layouts for pigments and masterbatches, with a supporting product-copy reference.</p><div class="role-line">My contribution: product photography & graphic layouts</div></article>
-<article class="project" data-category="merick"><div class="project-cover cover-lilac video-cover"><video controls playsinline preload="none" poster="assets/merick/merick-promotion-poster.jpg" aria-label="Merick Polymers promotional video" aria-describedby="merick-video-description"><source src="assets/merick/merick-promotion.mp4" type="video/mp4">Your browser does not support inline video. <a href="assets/merick/merick-promotion.mp4">Open the promotional video</a>.</video></div><div class="project-meta"><span>MERICK POLYMERS / PROMOTIONAL VIDEO</span><span>2026</span></div><h3>From product samples to a short story.</h3><p id="merick-video-description">A short Facebook promotional video featuring polymer pellets and colour samples. I planned the message, filmed the products, and edited the footage in CapCut.</p><div class="role-line">My contribution: planning, filming & CapCut editing</div></article>
-</div></section>
+        <article class="project" data-company="merick">
+          <div class="project-cover cover-lilac video-cover">
+            <video controls playsinline preload="none" poster="assets/merick/merick-promotion-poster.jpg" aria-label="Merick Polymers promotional video" aria-describedby="merick-video-description">
+              <source src="assets/merick/merick-promotion.mp4" type="video/mp4">
+              Your browser does not support inline video. <a href="assets/merick/merick-promotion.mp4">Open the promotional video</a>.
+            </video>
+          </div>
+          <div class="project-meta">
+            <span>MERICK POLYMERS / PROMOTIONAL VIDEO</span>
+            <span>2026</span>
+          </div>
+          <h4>From product samples to a short story.</h4>
+          <p id="merick-video-description">A short Facebook promotional video featuring polymer pellets and colour samples. I planned the message, filmed the products, and edited the footage in CapCut.</p>
+          <div class="role-line">My contribution: planning, filming &amp; CapCut editing</div>
+        </article>
+          </div>
+        </section>
+      </div>
+      <noscript><p>Enable JavaScript to open the full artwork galleries. You can also <a href="assets/Thitima-Phimsen-Resume.pdf">read my resume</a>.</p></noscript>
+      <p class="work-note">A note on the work: my contributions are described with each project. Book covers, mascots and underlying illustrations belong to their respective creators.</p>
+    </section>
 
-<section class="about-section" id="about"><div class="shell about-layout"><div class="about-heading"><p class="overline">THE PERSON BEHIND THE CONTENT</p><h2>A little curious.<br>A little visual.<br><em>Always learning.</em></h2><span class="about-flower" aria-hidden="true">✳</span></div><div class="about-copy"><p class="large-copy">I'm Thitima Phimsen.<br>You can call me <em>Miw.</em></p><p>I'm a third-year Digital Entrepreneurship student at Khon Kaen University. I enjoy noticing the small details in people, places, and everyday life, then finding a way to turn those observations into content.</p><p>My work combines research and writing with graphics, photography, and short-form video. I like understanding what an audience needs before deciding what a piece should look or sound like.</p><div class="tool-list"><span>Canva</span><span>CapCut</span><span>Figma</span><span>Product photography</span><span>Content research</span><span>Visual storytelling</span></div><a class="text-link" href="assets/Thitima-Phimsen-Resume.pdf" target="_blank" rel="noopener">Read my resume <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a></div></div></section>
+    <section id="about" class="about-section" aria-labelledby="about-title"><div class="shell about-layout">
+      <div class="about-title"><p class="eyebrow">THE PERSON BEHIND THE CONTENT</p><h2 id="about-title">CURIOUS<br>BY <span>NATURE.</span></h2><div class="name-tag"><span>Hello, my name is</span><strong>Miw :)</strong><span>THITIMA PHIMSEN</span></div></div>
+      <div class="about-copy"><h3>A little research.<br>A lot of care.</h3><p>I’m a third-year Digital Entrepreneurship student at Khon Kaen University. I enjoy noticing the small details in everyday life, then finding a way to turn those observations into content.</p><p>My work brings research and writing together with graphics, photography and short-form video. I like to understand what people need before deciding what a piece should look or sound like.</p><div class="skills"><span>Canva</span><span>CapCut</span><span>Figma</span><span>Content research</span><span>Product photography</span></div><a class="line-link" href="assets/Thitima-Phimsen-Resume.pdf" target="_blank" rel="noopener">Read my resume <span aria-hidden="true"><svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a></div>
+    </div></section>
 
-<section class="shell experience-section"><div class="section-heading"><div><p class="overline">LEARNING BY DOING</p><h2>Where I've <em>grown.</em></h2></div></div><div class="timeline"><article><div><span class="date">SEP 2026 TO PRESENT</span><h3>Sonar AI</h3><span class="job">Marketing Intern</span></div><p>Designing audiobook promotional graphics, developing campaign visuals, and coordinating with authors and the team to keep creative work aligned.</p></article><article><div><span class="date">APR TO JUN 2026 · 10 WEEKS</span><h3>Merick Polymers</h3><span class="job">Marketing Intern</span></div><p>Creating Facebook and website content for Merick Polymers and Leaf Pac, photographing products, editing videos, and supporting customer communication.</p></article><article><div><span class="date">2024 TO PRESENT</span><h3>Khon Kaen University</h3><span class="job">Digital Entrepreneurship · GPA 3.30</span></div><p>Studying consumer behaviour, marketing research, digital content design, and product innovation in the Faculty of Business Administration and Accountancy.</p></article></div></section>
+    <section class="experience-section shell" aria-labelledby="experience-title"><div class="section-heading"><div><p class="eyebrow">LEARNING THROUGH REAL WORK</p><h2 id="experience-title">Where I’ve been<span class="accent">.</span></h2></div></div>
+      <div class="experience-list">
+        <article><p class="tiny-label">SEP 2026 — PRESENT</p><div><h3>Sonar AI</h3><span>Marketing Intern</span></div><p>Audiobook promotional graphics, campaign visuals, and coordination with authors and the internal team.</p></article>
+        <article><p class="tiny-label">APR — JUN 2026 · 10 WEEKS</p><div><h3>Merick Polymers</h3><span>Marketing Intern</span></div><p>Facebook and website content for Merick and Leaf Pac, product photography, video editing, and customer communication.</p></article>
+        <article><p class="tiny-label">2024 — PRESENT</p><div><h3>Khon Kaen University</h3><span>Digital Entrepreneurship · GPA 3.30</span></div><p>Consumer behaviour, marketing research, digital content design, and product innovation.</p></article>
+      </div>
+      <div class="university"><h3>Outside the brief.</h3><p>University projects have taken me into cosmetics purchase-intention research, brand concepts in Figma, and community fieldwork with the Ban Pho Tak processed-fish enterprise. The research work includes manuscript preparation for journal submission, not a published paper.</p></div>
+    </section>
 
-<section class="shell studies"><div class="section-heading"><div><p class="overline">BEYOND THE INTERNSHIPS</p><h2>Ideas explored<br><em>at university.</em></h2></div><p>A few projects that shaped how I think about audiences, products, and visual communication.</p></div><div class="study-grid"><article><span class="study-label">RESEARCH</span><h3>What makes someone want to buy?</h3><p>Contributed to a study of influencer and social media effects on online cosmetics and skincare purchase intention, with manuscript preparation for a national journal submission.</p><small>Marketing Research & Analytics · Academic project</small></article><article><span class="study-label">VISUAL COMMUNICATION</span><h3>Finding a brand's visual direction.</h3><p>Created mood boards, logos, marketing graphics, and a basic website UX/UI concept in Figma.</p><small>Digital Content Design · Academic project</small></article><article><span class="study-label">COMMUNITY</span><h3>Listening before creating.</h3><p>Conducted field research to understand community needs and supported product development for the Ban Pho Tak processed-fish community enterprise.</p><small>Smart Citizen · Academic project</small></article></div></section>
+    <section id="contact" class="contact-section"><div class="shell"><p class="eyebrow">HAVE A STORY IN MIND?</p><h2>LET’S<br><a href="mailto:thitima.phims@gmail.com">CONNECT.<span aria-hidden="true"><svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a></h2><div class="contact-bottom"><p>Open to Marketing, Content, Social Media<br>and Visual Communication opportunities.</p><a href="tel:+66986060896"><svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.79a2 2 0 0 1-.45 2.11L8.09 9.89a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.89.34 1.83.58 2.79.7A2 2 0 0 1 22 16.92Z"/></svg> +66 98-606-0896</a><a href="mailto:thitima.phims@gmail.com">thitima.phims@gmail.com <span aria-hidden="true"><svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a></div></div></section>
+  </main>
+  <footer class="shell"><a class="logo" href="#" aria-label="Miw, back to top">miw.</a><span>THITIMA PHIMSEN / CONTENT & VISUAL STORYTELLING</span><a href="#work">Back to work <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20V4m-6 6 6-6 6 6"/></svg></a></footer>
 
-<section class="contact-section" id="contact"><div class="shell"><p class="overline">HAVE SOMETHING IN MIND?</p><h2>Let's make<br>something <em>connect.</em></h2><div class="contact-bottom"><p>Open to Marketing, Content, Social Media,<br>and Visual Communication opportunities.</p><a href="mailto:thitima.phims@gmail.com" class="contact-email">thitima.phims@gmail.com <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a></div></div></section>
-</main>
-<footer class="shell"><a class="wordmark" href="#">miw<span class="flower" aria-hidden="true">✳</span></a><span>Thitima Phimsen · Content & Visual Storytelling</span><a href="#work">Back to the work</a></footer>
-<dialog id="gallery" aria-labelledby="gallery-title"><div class="gallery-header"><div><span id="gallery-count"></span><h2 id="gallery-title"></h2></div><button class="close-button" aria-label="Close gallery"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg></button></div><div class="gallery-image-wrap"><img id="gallery-image" src="assets/sonar/sherlock-light.png" alt=""></div><div class="gallery-bottom"><p id="gallery-caption"></p><div class="gallery-controls"><button id="previous" aria-label="Previous artwork">Previous</button><button id="next" aria-label="Next artwork">Next</button></div></div></dialog>
+  <dialog id="gallery" aria-labelledby="gallery-title"><div class="gallery-header"><div><p class="tiny-label" id="gallery-count"></p><h2 id="gallery-title"></h2></div><button id="gallery-close" class="icon-button" aria-label="Close gallery">×</button></div><div class="gallery-stage"><img id="gallery-image" alt=""></div><div class="gallery-footer"><p id="gallery-caption"></p><div class="gallery-controls"><button id="previous" aria-label="Previous artwork"><svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 12H4m6-6-6 6 6 6"/></svg> Previous</button><button id="next" aria-label="Next artwork">Next <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></button></div></div></dialog>
 </body>
 </html>
